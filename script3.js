@@ -34,7 +34,7 @@
             overlay.style.top = '0';
             overlay.style.left = '0';
             overlay.style.width = '100%';
-            overlay.style.height = '100px';
+            overlay.style.height = '50%';
             overlay.style.zIndex = '1000'; // Ensure it’s on top
             document.body.appendChild(overlay);
         }
