@@ -21,9 +21,10 @@
         // Hide everything
         document.body.innerHTML = ''; // Clear the body
         document.body.appendChild(article); // Append the article to the body
-        
-        // Set background color to transparent
-        article.style.backgroundColor = 'transparent'; // Remove background color
+
+        //remove fastforward parts
+        document.querySelector('div.fastforward-left').remove();
+        document.querySelector('div.fastforward-right').remove();
     } else {
         console.log('No article found');
     }
