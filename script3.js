@@ -26,17 +26,11 @@
         document.querySelector('div.fastforward-left').remove();
         document.querySelector('div.fastforward-right').remove();
 
-        // overlay transparent widget over progressbar
-        var progressBar = document.querySelector('div.progress-bar-container');
-        if (progressBar) {
-            var overlay = document.createElement('div');
-            overlay.style.position = 'absolute';
-            overlay.style.top = '0';
-            overlay.style.left = '0';
-            overlay.style.width = '100%';
-            overlay.style.height = '50%';
-            overlay.style.zIndex = '1000'; // Ensure it’s on top
-            document.body.appendChild(overlay);
+        // disable progressbar
+        var targetDiv = document.querySelector('.progress-bar-container'); // Replace with your div's ID or selector
+        if (targetDiv) {
+            targetDiv.style.pointerEvents = 'none'; // Disable clicks on the div
+            targetDiv.style.opacity = '0.5'; // Optionally, change opacity to indicate it's disabled
         }
     } else {
         console.log('No article found');
