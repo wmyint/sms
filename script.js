@@ -2,16 +2,16 @@
     // Create and append the style element to hide unwanted elements immediately
     var style = document.createElement('style');
     style.innerHTML = `
-        #ad-header-mobile-contener,
-        h2.page-title,
-        div.video-metadata,
-        div.related-content,
-        div#tabComments_bottom_page,
-        div#footer,
-        div.buttons-bar,
-        div#video-tabs { 
-            display: none !important; 
-        }
+        // #ad-header-mobile-contener,
+        // h2.page-title,
+        // div.video-metadata,
+        // div.related-content,
+        // div#tabComments_bottom_page,
+        // div#footer,
+        // div.buttons-bar,
+        // div#video-tabs { 
+        //     display: none !important; 
+        // }
     `;
     document.head.appendChild(style);
     
