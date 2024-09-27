@@ -25,6 +25,19 @@
         //remove fastforward parts
         document.querySelector('div.fastforward-left').remove();
         document.querySelector('div.fastforward-right').remove();
+
+        // overlay transparent widget over progressbar
+        var progressBar = document.querySelector('div.progress-bar-container');
+        if (progressBar) {
+            var overlay = document.createElement('div');
+            overlay.style.position = 'absolute';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.zIndex = '1000'; // Ensure it’s on top
+            document.body.appendChild(overlay);
+        }
     } else {
         console.log('No article found');
     }
