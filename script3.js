@@ -30,7 +30,7 @@
         var targetDiv = document.querySelector('.progress-bar-container'); // Replace with your div's ID or selector
         if (targetDiv) {
             targetDiv.style.pointerEvents = 'none'; // Disable clicks on the div
-            targetDiv.style.opacity = '0.5'; // Optionally, change opacity to indicate it's disabled
+            targetDiv.style.opacity = '0.8'; // Optionally, change opacity to indicate it's disabled
         }
     } else {
         console.log('No article found');
